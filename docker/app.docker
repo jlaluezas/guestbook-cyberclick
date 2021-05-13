@@ -1,0 +1,44 @@
+FROM composer:2.0 AS composer
+
+FROM ubuntu:20.04
+
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+ENV DEBIAN FRONTEND noninteractive
+
+RUN apt-get update -yqq
+RUN apt-get upgrade -yqq
+RUN apt-get install -y locales tzdata && rm -rf /var/lib/apt/lists/* \
+    && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
+RUN apt-get update && apt-get install -y build-essential software-properties-common acl wget curl logrotate s3cmd supervisor unzip
+
+COPY ./docker/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Install PHP
+RUN add-apt-repository ppa:ondrej/php && add-apt-repository ppa:ondrej/apache2 && apt-get update -yqq
+RUN apt-get install -y php8.0 php8.0-amqp php8.0-intl php8.0-xml php8.0-simplexml php8.0-mbstring  php8.0-curl \
+     php8.0-http php8.0-gd php8.0-raphf php8.0-mysql php8.0-apcu
+
+RUN apt-get update && apt-get install -y php8.0-xdebug
+RUN echo "\nxdebug.start_with_request=yes\nxdebug.mode=debug\nxdebug.remote_connect_back=1\nxdebug.client_port=9003\nxdebug.scream=0\nxdebug.show_local_vars=1\nxdebug.idekey=PHPSTORM" >> /etc/php/8.0/apache2/php.ini
+RUN echo "\nxdebug.mode=debug\nxdebug.remote_connect_back=1\nxdebug.client_port=9003\nxdebug.scream=0\nxdebug.show_local_vars=1\nxdebug.idekey=PHPSTORM" >> /etc/php/8.0/cli/php.ini
+
+COPY ./docker/apache2.conf /etc/apache2/apache2.conf
+RUN chmod 644 /etc/apache2/apache2.conf
+
+# Update the default apache site with the config we created
+RUN rm /etc/apache2/sites-enabled/* && rm /etc/apache2/sites-available/* && rm /var/www/html/index.html
+COPY ./docker/sites-available/app-local.conf /etc/apache2/sites-available
+RUN a2ensite $(ls /etc/apache2/sites-available)
+
+RUN a2enmod ssl && a2enmod rewrite
+
+COPY ./docker/ssl-local /etc/apache2/ssl
+
+COPY ./docker/run.sh /home/
+RUN chmod +x /home/run.sh
+
+WORKDIR /app
+

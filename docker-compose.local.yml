@@ -1,0 +1,38 @@
+services:
+  mysql:
+    restart: unless-stopped
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+    - "3306:3306"
+    container_name: database_mysql
+    command: [ "--default-authentication-plugin=mysql_native_password"]
+    networks:
+      - network-local
+
+  app:
+    restart: unless-stopped
+    #image: ubuntu:21.04
+    build:
+      context: .
+      dockerfile: docker/app.docker
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: app
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
+    command: [ "/usr/bin/supervisord" ]
+    networks:
+      - network-local
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+
+
+networks:
+  network-local:
