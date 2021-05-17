@@ -1,0 +1,5 @@
+assets_get:
+    path: /
+    controller: App\Controller\ConferenceController
+    defaults: { auth: true }
+    methods:  [GET]
