@@ -91,6 +91,9 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/debug-pack" />
       <path value="$PROJECT_DIR$/app/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
