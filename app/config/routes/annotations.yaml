@@ -1,5 +1,7 @@
-assets_get:
-    path: /
-    controller: App\Controller\ConferenceController
-    defaults: { auth: true }
-    methods:  [GET]
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation
