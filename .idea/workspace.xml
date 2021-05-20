@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a0c9638-e954-43c0-a169-dfa2a984b294" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520095702.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520100438.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520144743.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Form/CommentFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Repository/AdminRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Conference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/conference/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conference/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/conference/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conference/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +50,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/src/Controller/ConferenceController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/conference/index.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Entity/Conference.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520100438.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Entity/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Form/CommentFormType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520095702.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/config/packages/framework.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/easy_admin.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/conference/show.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/base.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132838.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -155,6 +160,8 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mime" />
     </include_path>
   </component>
   <component name="ProjectId" id="1slCMH1AjbIvWy6tcNNWJ8bd6IB" />
@@ -183,7 +190,7 @@
       <updated>1621437741348</updated>
       <workItem from="1621437743476" duration="21000" />
       <workItem from="1621437783870" duration="1231000" />
-      <workItem from="1621498652952" duration="6209000" />
+      <workItem from="1621498652952" duration="13198000" />
     </task>
     <servers />
   </component>
