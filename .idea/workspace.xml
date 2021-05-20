@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a0c9638-e954-43c0-a169-dfa2a984b294" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520095702.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520100438.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Conference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/conference/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conference/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/conference/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conference/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/app/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/Controller/ConferenceController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Entity/Conference.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520100438.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Entity/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520095702.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/framework.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/base.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132838.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210519090848.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132415.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/intl-extra" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/app/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/proxy-manager-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/app/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-foundation" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1slCMH1AjbIvWy6tcNNWJ8bd6IB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a0c9638-e954-43c0-a169-dfa2a984b294" name="Default Changelist" comment="" />
+      <created>1621437741348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621437741348</updated>
+      <workItem from="1621437743476" duration="21000" />
+      <workItem from="1621437783870" duration="1231000" />
+      <workItem from="1621498652952" duration="6209000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="RELOAD_CONTEXT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/app" />
+    </ignored-roots>
+  </component>
+</project>

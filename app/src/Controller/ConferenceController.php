@@ -27,12 +27,15 @@ class ConferenceController extends AbstractController
         return $this->render('conference/index.html.twig', ['conferences' => $conferences ]);
     }
 
-    /** @Route("/conference/{id}", name="conference") */
-    public function show(Request $request,CommentRepository $commentRepository, Conference $conference) {
+    /** @Route("/conference/{slug}", name="conference") */
+    public function show(Request $request,ConferenceRepository $conferenceRepository, CommentRepository $commentRepository, Conference $conference) {
 
 
         $offset = max(0, $request->query->getInt('offset',0));
+
         $paginator = $commentRepository->getCommentPaginator($conference, $offset);
+
+
         return $this->render('conference/show.html.twig',
             ['conference' => $conference,
                 'comments' => $paginator,
