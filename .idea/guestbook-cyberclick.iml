@@ -95,6 +95,12 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/expression-language" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/debug-pack" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/pagerfanta/pagerfanta" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/browser-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/phpunit-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/data-fixtures" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
