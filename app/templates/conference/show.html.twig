@@ -1,4 +1,3 @@
-
 {% extends 'base.html.twig' %}
 
 {% block title %}Conference Guestbook - {{ conference }}{% endblock %}
@@ -11,7 +10,7 @@
 
         {% for comment in comments %}
             {% if comment.photofilename %}
-                <img src="{{ asset('uploads/photos/lisbon.png' ~ comment.photofilename) }}" />
+                <img src="{{ asset('uploads/photos/lisbon.png' ~ comment.photofilename) }}"/>
             {% endif %}
 
             <h4>{{ comment.author }}</h4>
@@ -23,12 +22,18 @@
         {% endfor %}
 
         {% if previous >= 0 %}
-            <a href="{{ path('conference', { id: conference.id, offset: previous }) }}">Previous</a>
+            <a href="{{ path('conference', { slug: conference.slug, offset:
+                previous }) }}">Previous</a>
         {% endif %}
         {% if next < comments|length %}
-            <a href="{{ path('conference', { id: conference.id, offset: next }) }}">Next</a>
+            <a href="{{ path('conference', { slug: conference.slug, offset:
+                next }) }}">Next</a>
         {% endif %}
     {% else %}
         <div>No comments have been posted yet for this conference.</div>
     {% endif %}
+
+    <h2>Add your own feedback</h2>
+    {{ form(comment_form) }}
+
 {% endblock %}
