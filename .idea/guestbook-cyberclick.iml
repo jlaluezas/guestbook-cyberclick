@@ -101,6 +101,11 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/phpunit-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/doctrine-fixtures-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/doctrine-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/redis-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/amqp-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/http-client" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
