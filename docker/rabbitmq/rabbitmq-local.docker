@@ -1,0 +1,3 @@
+FROM rabbitmq:3.8.9-management
+
+COPY --chown=rabbitmq:rabbitmq docker/rabbitmq/definitions-local.json /etc/rabbitmq/definitions.json

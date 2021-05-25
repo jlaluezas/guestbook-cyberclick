@@ -11,9 +11,7 @@ services:
     command: [ "--default-authentication-plugin=mysql_native_password"]
     networks:
       - network-local
-  rabbitmq:
-    image: rabbitmq:3.7-management
-    ports: [ 5672, 15672 ]
+
 
   app:
     restart: unless-stopped
@@ -34,6 +32,21 @@ services:
       - network-local
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
+  rabbitmq:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/rabbitmq/rabbitmq-local.docker
+    environment:
+      RABBITMQ_DEFAULT_USER: 'cyberclick'
+      RABBITMQ_DEFAULT_PASS: 'lvd2009'
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    container_name: rabbitmq
+    networks:
+      - network-local
 
 networks:
   network-local:
