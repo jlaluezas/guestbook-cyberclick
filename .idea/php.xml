@@ -112,6 +112,7 @@
       <path value="$PROJECT_DIR$/app/vendor/twig/cssinliner-extra" />
       <path value="$PROJECT_DIR$/app/vendor/lorenzo/pinky" />
       <path value="$PROJECT_DIR$/app/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
