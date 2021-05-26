@@ -48,11 +48,14 @@ services:
       - network-local
 
   mailcatcher:
+    container_name: mailcatcher
     restart: unless-stopped
     image: schickling/mailcatcher
     ports:
       - "1025:1025"
       - "1080:1080"
+    networks:
+      - network-local
 
 networks:
   network-local:

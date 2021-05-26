@@ -34,8 +34,21 @@ class ConferenceController extends AbstractController
     /** @Route("/", name="homepage") */
     public function index(ConferenceRepository $conferenceRepository): Response
     {
-        $conferences = $conferenceRepository->findAll();
-        return $this->render('conference/index.html.twig', ['conferences' => $conferences]);
+        $response = new Response($this->twig->render('conference/index.html.twig', [
+            'conferences' => $conferenceRepository->findAll(),
+        ]));
+        $response->setSharedMaxAge(3600);
+        return $response;
+    }
+
+    /** @Route("/conference_header", name="conference_header") */
+    public function conferenceHeader(ConferenceRepository $conferenceRepository)
+    {
+        $response = new Response($this->twig->render('conference/header.html.twig', [
+            'conferences' => $conferenceRepository->findAll(),
+        ]));
+        $response->setSharedMaxAge(3600);
+        return $response;
     }
 
     /** @Route("/conference/{slug}", name="conference") */
