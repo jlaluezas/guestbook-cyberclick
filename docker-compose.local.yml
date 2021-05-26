@@ -6,12 +6,11 @@ services:
       - MYSQL_ROOT_PASSWORD=
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     ports:
-    - "3306:3306"
+      - "3306:3306"
     container_name: database_mysql
-    command: [ "--default-authentication-plugin=mysql_native_password"]
+    command: [ "--default-authentication-plugin=mysql_native_password" ]
     networks:
       - network-local
-
 
   app:
     restart: unless-stopped
@@ -47,6 +46,13 @@ services:
     container_name: rabbitmq
     networks:
       - network-local
+
+  mailcatcher:
+    restart: unless-stopped
+    image: schickling/mailcatcher
+    ports:
+      - "1025:1025"
+      - "1080:1080"
 
 networks:
   network-local:
