@@ -118,6 +118,7 @@
       <path value="$PROJECT_DIR$/app/vendor/twig/cssinliner-extra" />
       <path value="$PROJECT_DIR$/app/vendor/twig/inky-extra" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
