@@ -1,26 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a0c9638-e954-43c0-a169-dfa2a984b294" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210520144743.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Form/CommentFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Repository/AdminRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/mailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/messenger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/test/dama_doctrine_test_bundle.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/workflow.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/dev/dev.AKISMET_KEY.ca01fb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/dev/dev.decrypt.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/dev/dev.encrypt.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/dev/dev.list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/prod/prod.AKISMET_KEY.ca01fb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/prod/prod.encrypt.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/prod/prod.list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/test/test.AKISMET_KEY.ca01fb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/test/test.decrypt.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/test/test.encrypt.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/secrets/test/test.list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210525095433.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210525114116.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Message/CommentMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/MessageHandler/CommentMessageHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SpamChecker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/admin/review.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/conference/header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/emails/comment_notification.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/Controller/ConferenceControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/SpamCheckerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/rabbitmq/definitions-local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/rabbitmq/rabbitmq-local.docker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook-cyberclick.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/framework.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Conference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/EventListener/ConferenceEntityListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/EntityListener/ConferenceEntityListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/AdminRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/AdminRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/CommentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/conference/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/conference/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +95,57 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/app/src/Controller/ConferenceController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/templates/conference/index.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/bin/phpunit" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Controller/SecurityController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/tests/Controller/ConferenceControllerTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/security/login.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/SpamChecker.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/tests/bootstrap.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Repository/AdminRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Entity/Admin.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/.env.test" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/phpunit.xml.dist" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132838.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210519090848.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132415.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/mailer.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Controller/AdminController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/workflow.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Entity/Conference.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520100438.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Entity/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Repository/ConferenceRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Form/CommentFormType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/EventSubscriber/TwigEventSubscriber.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520095702.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Repository/CommentRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/messenger.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/config/packages/framework.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/config/packages/easy_admin.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/conference/show.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210525095433.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.local.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520100438.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/public/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210525114116.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210520095702.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/composer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/base.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132838.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210519090848.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20210518132415.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Controller/ConferenceController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/conference/index.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/MessageHandler/CommentMessageHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/vendor/symfony/framework-bundle/Test/WebTestCase.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Message/CommentMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/bin/.phpunit/phpunit-8.5-0/vendor/phpunit/php-code-coverage/phpunit.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/tests/SpamCheckerTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/EntityListener/ConferenceEntityListener.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/secrets/dev/dev.AKISMET_KEY.ca01fb.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -162,6 +240,30 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/app/vendor/dama/doctrine-test-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/redis-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/amqp-messenger" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/workflow" />
+      <path value="$PROJECT_DIR$/app/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/app/vendor/lorenzo/pinky" />
+      <path value="$PROJECT_DIR$/app/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/cssinliner-extra" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/inky-extra" />
     </include_path>
   </component>
   <component name="ProjectId" id="1slCMH1AjbIvWy6tcNNWJ8bd6IB" />
@@ -174,11 +276,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../book-5.0-1-step-20" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/rabbitmq" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,7 +300,10 @@
       <updated>1621437741348</updated>
       <workItem from="1621437743476" duration="21000" />
       <workItem from="1621437783870" duration="1231000" />
-      <workItem from="1621498652952" duration="13198000" />
+      <workItem from="1621498652952" duration="13959000" />
+      <workItem from="1621585791462" duration="4993000" />
+      <workItem from="1621928757006" duration="21115000" />
+      <workItem from="1622013396298" duration="17828000" />
     </task>
     <servers />
   </component>

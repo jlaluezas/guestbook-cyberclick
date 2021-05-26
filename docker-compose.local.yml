@@ -6,9 +6,9 @@ services:
       - MYSQL_ROOT_PASSWORD=
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     ports:
-    - "3306:3306"
+      - "3306:3306"
     container_name: database_mysql
-    command: [ "--default-authentication-plugin=mysql_native_password"]
+    command: [ "--default-authentication-plugin=mysql_native_password" ]
     networks:
       - network-local
 
@@ -32,7 +32,30 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
+  rabbitmq:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/rabbitmq/rabbitmq-local.docker
+    environment:
+      RABBITMQ_DEFAULT_USER: 'cyberclick'
+      RABBITMQ_DEFAULT_PASS: 'lvd2009'
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    container_name: rabbitmq
+    networks:
+      - network-local
 
+  mailcatcher:
+    restart: unless-stopped
+    image: schickling/mailcatcher
+    container_name: mailcatcher
+    ports:
+      - "1025:1025"
+      - "1080:1080"
+    networks:
+      - network-local
 
 networks:
   network-local:

@@ -1,0 +1,49 @@
+{
+  "rabbit_version": "3.8.25",
+  "users": [
+    {
+      "name": "cyberclick",
+      "password_hash": "kP/q+qaawxIfKrPiq4I0ZndGva0X3yoC++9mJe/XhdV95rgq",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "dev"
+    },
+    {
+      "name": "test"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "cyberclick",
+      "vhost": "dev",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "cyberclick",
+      "vhost": "test",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "parameters": [
+  ],
+  "global_parameters": [
+    {
+      "name": "cluster_name",
+      "value": "rabbit@fc8e72c69237"
+    }
+  ],
+  "policies": [
+  ],
+  "queues": [
+  ],
+  "exchanges": [
+  ]
+}

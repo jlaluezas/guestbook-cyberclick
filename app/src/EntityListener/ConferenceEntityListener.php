@@ -1,7 +1,7 @@
 <?php
 
+namespace App\EntityListener;
 
-namespace App\EventListener;
 use App\Entity\Conference;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Symfony\Component\String\Slugger\SluggerInterface;
@@ -15,12 +15,13 @@ class ConferenceEntityListener
         $this->slugger = $slugger;
     }
 
-    public function prePersist(Conference $conference, LifecycleEventArgs $event){
+    public function prePersist(Conference $conference, LifecycleEventArgs $event)
+    {
         $conference->computeSlug($this->slugger);
     }
 
-    public function preUpdate(Conference $conference, LifecycleEventArgs $event){
+    public function preUpdate(Conference $conference, LifecycleEventArgs $event)
+    {
         $conference->computeSlug($this->slugger);
     }
-
 }

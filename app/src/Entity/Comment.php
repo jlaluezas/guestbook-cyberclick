@@ -2,43 +2,38 @@
 
 namespace App\Entity;
 
-use App\Repository\CommentRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass=CommentRepository::class)
- *
+ * @ORM\Entity(repositoryClass="App\Repository\CommentRepository")
  * @ORM\HasLifecycleCallbacks()
  */
 class Comment
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     *
-     * @Assert\NotBlank()
+     * @Assert\NotBlank
      */
     private $author;
 
     /**
      * @ORM\Column(type="text")
-     *
-     *  @Assert\NotBlank()
+     * @Assert\NotBlank
      */
     private $text;
 
     /**
      * @ORM\Column(type="string", length=255)
-     *
-     *  @Assert\NotBlank()
-     * @Assert\Email()
+     * @Assert\NotBlank
+     * @Assert\Email
      */
     private $email;
 
@@ -48,7 +43,7 @@ class Comment
     private $createdAt;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Conference::class, inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Conference", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
      */
     private $conference;
@@ -59,12 +54,9 @@ class Comment
     private $photoFilename;
 
     /**
-     * @ORM\PrePersist()
+     * @ORM\Column(type="string", length=255, options={"default": "submitted"})
      */
-    public function setCreatedAtValue(){
-        $this->createdAt = new \DateTime();
-
-    }
+    private $state = 'submitted';
 
     public function __toString(): string
     {
@@ -124,6 +116,14 @@ class Comment
         return $this;
     }
 
+    /**
+     * @ORM\PrePersist
+     */
+    public function setCreatedAtValue()
+    {
+        $this->createdAt = new \DateTime();
+    }
+
     public function getConference(): ?Conference
     {
         return $this->conference;
@@ -144,6 +144,18 @@ class Comment
     public function setPhotoFilename(?string $photoFilename): self
     {
         $this->photoFilename = $photoFilename;
+
+        return $this;
+    }
+
+    public function getState(): ?string
+    {
+        return $this->state;
+    }
+
+    public function setState(string $state): self
+    {
+        $this->state = $state;
 
         return $this;
     }

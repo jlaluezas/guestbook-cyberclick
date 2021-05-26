@@ -2,19 +2,17 @@
 
 namespace App\Entity;
 
-use App\Repository\AdminRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ORM\Entity(repositoryClass=AdminRepository::class)
- * @ORM\Table(name="`admin`")
+ * @ORM\Entity(repositoryClass="App\Repository\AdminRepository")
  */
 class Admin implements UserInterface
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -34,11 +32,6 @@ class Admin implements UserInterface
      * @ORM\Column(type="string")
      */
     private $password;
-
-    public function __toString(): string
-    {
-        return $this->username;
-    }
 
     public function getId(): ?int
     {
@@ -81,12 +74,17 @@ class Admin implements UserInterface
         return $this;
     }
 
+    public function __toString(): string
+    {
+        return $this->username;
+    }
+
     /**
      * @see UserInterface
      */
     public function getPassword(): string
     {
-        return $this->password;
+        return (string) $this->password;
     }
 
     public function setPassword(string $password): self
@@ -97,14 +95,11 @@ class Admin implements UserInterface
     }
 
     /**
-     * Returning a salt is only needed, if you are not using a modern
-     * hashing algorithm (e.g. bcrypt or sodium) in your security.yaml.
-     *
      * @see UserInterface
      */
-    public function getSalt(): ?string
+    public function getSalt()
     {
-        return null;
+        // not needed when using the "bcrypt" algorithm in security.yaml
     }
 
     /**
