@@ -106,6 +106,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/redis-messenger" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/amqp-messenger" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/workflow" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

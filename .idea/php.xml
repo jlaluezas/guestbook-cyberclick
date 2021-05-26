@@ -105,6 +105,7 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/redis-messenger" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/amqp-messenger" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/workflow" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
