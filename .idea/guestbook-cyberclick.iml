@@ -115,6 +115,8 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/webpack-encore-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/imagine/imagine" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/notifier" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/slack-notifier" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
