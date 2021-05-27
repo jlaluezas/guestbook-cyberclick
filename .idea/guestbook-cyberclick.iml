@@ -117,6 +117,17 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/imagine/imagine" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/notifier" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/slack-notifier" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/web-link" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/nelmio/cors-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/api-platform/core" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/link" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/fig/link-util" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/willdurand/negotiation" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
