@@ -127,6 +127,7 @@
       <path value="$PROJECT_DIR$/app/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/app/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

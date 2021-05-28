@@ -33,8 +33,7 @@ class CommentReviewNotification extends Notification implements EmailNotificatio
         $message = EmailMessage::fromNotification($this, $recipient, $transport);
         $message->getMessage()
             ->htmlTemplate('emails/comment_notification.html.twig')
-            ->context(['comment' => $this->comment])
-        ;
+            ->context(['comment' => $this->comment]);
 
         return $message;
     }

@@ -46,5 +46,6 @@ RUN chmod +x /home/run.sh
 
 APP_ENV=prod symfony console secrets:set SLACK_DSN
 
+
 WORKDIR /app
 
