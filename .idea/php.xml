@@ -128,6 +128,7 @@
       <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/app/vendor/willdurand/negotiation" />
       <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/app/vendor/twig/string-extra" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
